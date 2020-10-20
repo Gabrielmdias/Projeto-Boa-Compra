@@ -25,7 +25,6 @@ public class CalculaFretePredicate implements CalculaValor {
 		} else {
 			return this.calculaValorFalso.calcular(brinde);
 		}
-		
 	}
 
 }

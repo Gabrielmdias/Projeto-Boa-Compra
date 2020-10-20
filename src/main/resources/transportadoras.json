@@ -1,0 +1,18 @@
+{
+    "transportadora" : [{
+        "empresa": "BoaDex",
+        "valorFixo": "10.00", 
+        "valorKmKg": "0.05" 
+    }, {
+        "empresa": "BoaLog",
+        "valorFixo": "4.30",
+        "valorKmKg": "0.12"
+    }, {
+        "empresa": "Transboa",
+        "valorFixo": "2.10",
+        "valorKmKg": "1.10",
+        "pesoLimiar": "5",
+        "valorFixo2": "10.00",
+        "valorKmKg2": "0.01"
+    }]  
+}

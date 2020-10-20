@@ -15,7 +15,7 @@ public class PredicateLimiar implements Predicate<Brinde>{
 
 	@Override
 	public boolean test(Brinde brinde) {
-		return brinde.getPeso().compareTo(new BigDecimal(this.pesoLimiar)) > 0;
+		return brinde.getProduto().getPeso().compareTo(new BigDecimal(this.pesoLimiar)) > 0;
 	}
 	
 }

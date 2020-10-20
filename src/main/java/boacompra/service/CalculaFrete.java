@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import boacompra.model.Brinde;
 
 public class CalculaFrete implements CalculaValor {
-	
+
 	private final BigDecimal valorFixo;
 	private final BigDecimal valorKmKg;
 
@@ -16,9 +16,8 @@ public class CalculaFrete implements CalculaValor {
 
 	@Override
 	public BigDecimal calcular(Brinde brinde) {
-		return this.valorFixo.add(new BigDecimal(brinde.getDistancia())
-				.multiply(this.valorKmKg).multiply(brinde.getPeso()));
-		
+		return this.valorFixo.add(
+				new BigDecimal(brinde.getDistancia()).multiply(this.valorKmKg).multiply(brinde.getProduto().getPeso()));
 	}
 
 }

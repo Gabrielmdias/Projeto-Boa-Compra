@@ -29,9 +29,14 @@ public class Transportadora {
 	public void setCalculaValor(CalculaValor calculaValor) {
 		this.calculaValor = calculaValor;
 	}
-	
+
 	public BigDecimal calcularFrete(Brinde brinde) {
 		return this.calculaValor.calcular(brinde);
+	}
+
+	@Override
+	public String toString() {
+		return "Transportadora [nome=" + nome + ", calculaValor=" + calculaValor + "]";
 	}
 
 }

@@ -1,17 +1,13 @@
 package boacompra.model;
 
-import java.math.BigDecimal;
-
 public class Brinde {
 
 	private Produto produto;
 	private Integer distancia;
-	private BigDecimal peso;
 
-	public Brinde(Produto produto, Integer distancia, BigDecimal peso) {
+	public Brinde(Produto produto, Integer distancia) {
 		this.produto = produto;
 		this.distancia = distancia;
-		this.peso = peso;
 	}
 
 	public Produto getProduto() {
@@ -30,17 +26,9 @@ public class Brinde {
 		this.distancia = distancia;
 	}
 
-	public BigDecimal getPeso() {
-		return peso;
-	}
-
-	public void setPeso(BigDecimal peso) {
-		this.peso = peso;
-	}
-
 	@Override
 	public String toString() {
-		return "Brinde [produto=" + produto + ", distancia=" + distancia + ", peso=" + peso + "]";
+		return "Brinde [produto=" + produto + ", distancia=" + distancia + "]";
 	}
 
 }
