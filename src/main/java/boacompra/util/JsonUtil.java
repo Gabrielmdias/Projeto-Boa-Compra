@@ -24,16 +24,13 @@ public class JsonUtil {
 	    throw new IllegalStateException("Utility class");
 	}
 
-	private static final String TRANSPOPRTADORA_JSON = "./src/main/resources/transportadoras.json";
-
-
 	@SuppressWarnings("unchecked")
-	public static List<Transportadora> readTransportadoraJson() throws FileNotFoundException, IOException, ParseException {
+	public static List<Transportadora> readTransportadoraJson(String filePath) throws FileNotFoundException, IOException, ParseException {
 		JSONParser jsonParser = new JSONParser();
 
 		List<Transportadora> transportadoras = new ArrayList<>();
 
-		try (FileReader reader = new FileReader(TRANSPOPRTADORA_JSON)) {
+		try (FileReader reader = new FileReader(filePath)) {
 			JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
 
 			JSONArray transportadoraList = (JSONArray) jsonObject.get("transportadora");

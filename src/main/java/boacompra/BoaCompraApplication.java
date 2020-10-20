@@ -43,7 +43,7 @@ public class BoaCompraApplication {
 
 		Produto produto = new Produto(nome, new BigDecimal(peso.toString()));
 		Brinde brinde = new Brinde(produto, distancia);
-		List<Transportadora> transportadoras = JsonUtil.readTransportadoraJson();
+		List<Transportadora> transportadoras = JsonUtil.readTransportadoraJson(args[0]);
 
 		System.out.print(String.format("%nBrinde %s com peso de %.2f kg e distancia de %d km%n",
 				brinde.getProduto().getNome(), brinde.getProduto().getPeso(),
