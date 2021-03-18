@@ -1,4 +1,4 @@
-# Boa Compra Sorteio
+# Projeto Sorteio
 
 Para rodar utilize o seguinte comando: 
 
